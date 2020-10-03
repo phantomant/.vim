@@ -1,3 +1,15 @@
 [submodule "pack/community/start/rust.vim"]
 	path = pack/community/start/rust.vim
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule "pack/community/start/vim-lsp"]
+	path = pack/community/start/vim-lsp
+	url = https://github.com/prabirshrestha/vim-lsp.git
+[submodule "pack/community/start/asyncomplete.vim"]
+	path = pack/community/start/asyncomplete.vim
+	url = https://github.com/prabirshrestha/asyncomplete.vim.git
+[submodule "pack/community/start/asyncomplete-lsp.vim"]
+	path = pack/community/start/asyncomplete-lsp.vim
+	url = https://github.com/prabirshrestha/asyncomplete-lsp.vim
+[submodule "pack/community/start/vim-lsp-settings"]
+	path = pack/community/start/vim-lsp-settings
+	url = https://github.com/mattn/vim-lsp-settings.git
