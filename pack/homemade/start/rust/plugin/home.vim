@@ -1,0 +1,1 @@
+echom "homemade rust.vim"
