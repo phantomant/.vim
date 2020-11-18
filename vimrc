@@ -29,3 +29,6 @@ nnoremap <C-H> <C-W>h
 
 " disable mouse in all modes
 set mouse=
+
+" disable vim auto into replace mode in wsl2
+set t_u7=
