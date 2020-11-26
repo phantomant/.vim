@@ -6,11 +6,6 @@ set nocompatible
 " show line numbers
 set nu
 
-" default indent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
 
 " enable syntax highlight
 syntax on
@@ -32,3 +27,23 @@ set mouse=
 
 " disable vim auto into replace mode in wsl2
 set t_u7=
+
+" nerdtree stuff
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+
+map <C-n> :NERDTreeToggle<CR>
+
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+
+" default indent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+set foldmethod=indent
