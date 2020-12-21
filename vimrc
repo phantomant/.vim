@@ -1,5 +1,3 @@
-
-
 " set no vi compatiable
 set nocompatible
 
@@ -46,4 +44,10 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-set foldmethod=indent
+" set foldmethod=indent
+"
+
+" color scheme
+set background=dark
+colorscheme solarized
+let g:solarized_termcolors=256
