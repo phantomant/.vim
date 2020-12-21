@@ -51,3 +51,4 @@ set expandtab
 
 " add color column
 set colorcolumn=81
+highlight ColorColumn ctermbg=3
