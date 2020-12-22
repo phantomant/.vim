@@ -5,14 +5,14 @@ set nocompatible
 set nu
 
 
-" enable syntax highlight
-syntax on
 
 " enable filetype detection
 " filetype off should after syntax on, or else not working
 filetype on
 filetype plugin indent on
 
+" enable syntax  
+syntax enable
 
 " window switch
 nnoremap <C-J> <C-W>j
@@ -47,16 +47,14 @@ set softtabstop=4
 set shiftwidth=4
 set expandtab
 
-<<<<<<< HEAD
-" set foldmethod=indent
-"
-
 " color scheme
-set background=dark
-colorscheme solarized
-let g:solarized_termcolors=256
-=======
+colorscheme nightwish
+
 " add color column
 set colorcolumn=81
-highlight ColorColumn ctermbg=3
->>>>>>> 5ebf272c56c0ef5c91ed096839459acc71ff5e89
+
+" alwarsy split in bottom
+"set splitbelow
+set splitright
+
+" color scheme

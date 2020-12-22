@@ -8,9 +8,9 @@ let g:rustfmt_autosave = 1
 " style as rust std
 let g:rust_recommended_style = 1
 
-let g:cargo_shell_command_runner = "botright terminal"
-set termwinsize=10x0
-hi Terminal ctermbg=white ctermfg=black
+let g:cargo_shell_command_runner = "vertical terminal"
+set termwinsize=0x80
+"hi Terminal ctermbg=black ctermfg=white
 
 " shortcuts
 autocmd FileType rust  nnoremap ,r :Crun<cr>
